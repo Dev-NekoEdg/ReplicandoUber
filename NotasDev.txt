@@ -1,0 +1,5 @@
+2020-06-29
+*   Para solucionar el problema con el que no se podia ejecutar Java, toco desinstalar el Java extension
+    Pack
+*   para arreglar el PHP server seguir las instrucciones del video:
+    https://www.youtube.com/watch?v=ZIKnf1hbd3c
