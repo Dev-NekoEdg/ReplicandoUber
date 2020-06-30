@@ -1,11 +1,17 @@
 from car import Car
 from account import Account
+from uberX import UberX
 
 if __name__ == "__main__":
     print("Hola mundo en python")
-    car = Car("ABC123", Account("Andres Res", "DEF456"))
-    print(vars(car))
-    print(vars(car.driver))
+    # car = Car("ABC123", Account("Andres Res", "DEF456"))
+    # print(vars(car))
+    # print(vars(car.driver))
+    
+    print("Uber x")
+    uberX = UberX("DEF789", Account("Andres repo", "DEF456"), "Ford", "Fiesta")
+    print(vars(uberX))
+    print(vars(uberX.driver))
 
     
     #Comentario simple
