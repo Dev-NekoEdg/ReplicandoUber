@@ -2,20 +2,31 @@ public class Car {
     Integer id;
     String license;
     Account driver;
-    Integer passengers;
+    private Integer passengers;
 
     public Car(String license, Account driver) {
         this.license = license;
         this.driver = driver;
     }
 
-    public void printDataCar(){
-        System.out.println(
-            "License: " + this.license + " - Driver Name: " + this.driver.name
-        );        
+    public Integer getPassengers() {
+        return this.passengers;
+    }
+
+    public void setPassengers(Integer passengers) {
+
+        if (passengers < 4) {
+            System.out.println("el auot bede de tener minimo 4 pasajeros.");
+        } else {
+            this.passengers = passengers;
+        }
+
+    }
+
+    public void printDataCar() {
+        if (passengers == 4) {
+            System.out.println("License: " + this.license + " - Driver Name: " + this.driver.name + " - Passengers: "
+                    + this.passengers);
+        }
     }
 }
-
-
-//No sirve...
-// no se puede levantar el debugger, ni el intelicense ni ejecutar...
